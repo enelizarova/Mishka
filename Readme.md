@@ -1,7 +1,7 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Елизарова](https://up.htmlacademy.ru/adaptive/9/user/30148).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Одноколова](https://up.htmlacademy.ru/adaptive/9/user/38936).
 
 ---
 
