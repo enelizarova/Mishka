@@ -33,55 +33,53 @@
       <div class="main-container">
         <h1 class="page-title"></h1>
         <p class="page-prew">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="form-for-type">
+        <form class="order-form">
           <fieldset>
             <legend>Тип</legend>
-            <input type="radio" id="accessory">
+            <input type="radio" id="accessory" name="form-radio" class="order-form__radio" checked="checked">
             <label for="accessory">Аксессуар для  интерьера</label>
-            <input type="radio" id="toy">
+            <input type="radio" id="toy" name="form-radio" class="order-form__radio">
             <label for="toy">Детская игрушка</label>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
-            <input type="checkbox" id="white">
+            <input type="checkbox" id="white" name="form-checkbox" class="order-form__checkbox" checked="checked">
             <label for="white">Белый</label>
-            <input type="checkbox" id="gray">
+            <input type="checkbox" id="gray" name="form-checkbox" class="order-form__checkbox" checked="checked">
             <label for="gray">Серый</label>
-            <input type="checkbox" id="Tiffani">
+            <input type="checkbox" id="Tiffani" name="form-checkbox" class="order-form__checkbox">
             <label for="Tiffani">"Тиффани"</label>
-            <input type="checkbox" id="black">
+            <input type="checkbox" id="black" name="form-checkbox" class="order-form__checkbox">
             <label for="black">Черный</label>
-            <input type="checkbox" id="pink">
+            <input type="checkbox" id="pink" name="form-checkbox" class="order-form__checkbox">
             <label for="pink">Розовый</label>
-            <input type="checkbox" id="orange">
+            <input type="checkbox" id="orange" name="form-checkbox" class="order-form__checkbox">
             <label for="orange">Оранжевый</label>
           </fieldset>
           <fieldset>
             <legend>ФИО</legend>
-            <input type="text" placeholder="Введите ваше имя*" id="username">
+            <input type="text" placeholder="Введите ваше имя*" id="username" name="form-text" class="order-form__text">
             <label for="username">Имя:</label>
-            <input type="text" placeholder="Укажите фамилию*" id="usersoname">
+            <input type="text" placeholder="Укажите фамилию*" id="usersoname" name="form-text" class="order-form__text">
             <label for="usersoname">Фамилия:</label>
-            <input type="text" placeholder="Отчество, если желаете" id="second-username">
+            <input type="text" placeholder="Отчество, если желаете" id="second-username" name="form-text" class="order-form__text">
             <label for="second-username">Отчество:</label>
           </fieldset>
           <fieldset>
             <legend>Тел</legend>
-            <input type="tel" placeholder="+7 ХХХ ХХ ХХ*">
+            <input type="tel" placeholder="+7 ХХХ ХХ ХХ*" name="form-tel" class="order-form__tel">
           </fieldset>
           <fieldset>
             <legend>E-mail</legend>
-            <input type="email" placeholder="Ваш Email*">
+            <input type="email" placeholder="Ваш Email*" name="form-email" class="order-form__email">
           </fieldset>
           <fieldset>
             <legend>Доп</legend>
-            <input type="textarea" placeholder="Опишите все ваши  пожелания к заказу">
+            <input type="textarea" placeholder="Опишите все ваши  пожелания к заказу" name="form-textarea" class="order-form__texrarea">
+            <p>Опишите все ваши  пожелания к заказу</p>
           </fieldset>
+          <input type="button" name="form-btn" class="btn" placeholder="Отправить заказ" name="form-button">
         </form>
-        <p>Опишите все ваши  пожелания к заказу</p>
-      </div>
-      <div class="order-sent-bnt">
-        <a href="" class="btn">Отправить заказ</a>
       </div>
     </main>
     <footer class="main-footer">
