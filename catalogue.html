@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__logo">
-        <img src="http://placekitten.com/86/35" width="86" height="35">
-      </div>
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__btn" type="button"></button>
+      <a href="index.html" class="main-header__logo">
+        <img src="img/logo-mobile.svg" width="86" height="35">
+      </a>
+      <nav class="main-nav main-nav--opened">
+        <a class="main-nav__btn"></a>
         <div class="main-nav__container">
           <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a href="#">Каталог товаров</a>
+            <li>
+              <a href="#" class="main-nav__item">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#">Вязание на заказ</a>
+            <li>
+              <a href="form.html" class="main-nav__item">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item main-nav__item--search">
-              <a href="#">Поиск по сайту</a>
+            <li>
+              <a href="#" class="main-nav__item main-nav__item--search">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item main-nav__item--cart">
-              <a href="#"></a>
+            <li>
+              <a href="#"  class="main-nav__item main-nav__item--cart">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -35,42 +36,42 @@
         <div class="catalogue-list">
           <div class="product">
             <a href="" class="product__pic">
-              <img src="http://placekitten.com/260/195">
+              <img src="img/photo-1-mobile@1x.jpg" width="260" height="195">
             </a>
-            <a class="product__name">Корзинка для белья</a>
-            <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
-            <p class="product__price">690 руб</p>
-            <div class="product__cart">
-              <a href=""></a>
+            <div class="product__wrapper">
+              <a class="product__name">Зайчик-попрыгайчик</a>
+              <p class="product__parameters">Рост 30 см, вес 200 г</p>
+              <p class="product__price">1200 руб</p>
+              <a class="product__cart" href=""></a>
             </div>
           </div>
           <div class="product">
             <a href="" class="product__pic">
-              <img src="http://placekitten.com/260/195">
+              <img src="img/photo-2-mobile@1x.jpg" width="260" height="195">
             </a>
-            <a class="product__name">Корзинка для белья</a>
-            <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
-            <p class="product__price">690 руб</p>
-            <div class="product__cart">
-              <a href=""></a>
+            <div class="product__wrapper">
+              <a class="product__name">Корзинка для белья</a>
+              <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
+              <p class="product__price">690 руб</p>
+              <a class="product__cart" href=""></a>
             </div>
           </div>
           <div class="product">
             <a href="" class="product__pic">
-              <img src="http://placekitten.com/260/195">
+              <img src="img/photo-3-mobile@1x.jpg" width="260" height="195">
             </a>
-            <a class="product__name">Корзинка для белья</a>
-            <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
-            <p class="product__price">690 руб</p>
-            <div class="product__cart">
-              <a href=""></a>
+            <div class="product__wrapper">
+              <a class="product__name">Большая корзина для игрушек</a>
+              <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
+              <p class="product__price">1500 руб</p>
+              <a href="" class="product__cart"></a>
             </div>
           </div>
         </div>
         <div class="how-to-do">
           <h2 class="how-to-do__name">Процесс поизводства</h2>
           <div class="how-to-do__video">
-            <img src="http://placekitten.com/260/150"> <!-- заглушка -->
+            <img src="img/video-mobile@1x.jpg" width="260" height="150">
           </div>
           <p class="how-to-do__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="how-to-do__btn btn">Сделать заказ</a>

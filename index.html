@@ -3,29 +3,31 @@
   <head>
     <meta charset="utf-8">
       <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
   </head>
   <body>
 <!--     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
     -->
     <header class="main-header">
       <div class="main-header__logo">
-        <img src="http://placekitten.com/86/35" width="86" height="35">
+        <img src="img/logo-mobile.svg" width="86" height="35">
       </div>
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__btn" type="button"></button>
+      <nav class="main-nav main-nav--opened">
+        <a class="main-nav__btn"></a>
         <div class="main-nav__container">
           <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a href="#">Каталог товаров</a>
+            <li>
+              <a href="catalogue.html" class="main-nav__item">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#">Вязание на заказ</a>
+            <li>
+              <a href="form.html" class="main-nav__item">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item main-nav__item--search">
-              <a href="#">Поиск по сайту</a>
+            <li>
+              <a href="#" class="main-nav__item main-nav__item--search">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item main-nav__item--cart">
-              <a href="#"></a>
+            <li>
+              <a href="#"  class="main-nav__item main-nav__item--cart">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -34,35 +36,31 @@
     <main>
       <div class="main-container">
         <div class="page-title">
-          <h1 class="page-title__name">Милые штуки ручной работы для дома</h1>
+          <h1 class="page-title__name">Милые штуки</br> ручной</br> работы для дома</h1>
         </div>
         <div class="catalogue">
-          <a href="" class="catalogue-item">
-            <h2 class="catalogue-item__name">Предметы  интерьера</h2>
-          </a>
-          <a class="catalogue-item">
-            <h2 class="catalogue-item__name">Детские  игрушки</h2>
-          </a>
+          <a href="" class="catalogue-item catalogue-item--interior">Предметы </br>интерьера</a>
+          <a href="" class="catalogue-item catalogue-item--toy">Детские </br>игрушки</a>
           <div class="good-of-week">
             <h2 class="good-of-week__name">Вязаные корзинки</h2>
             <div class="good-of-week__offers-name">Товар недели</div>
             <p class="good-of-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="table">
               <tr>
-                <td class="table__field">Цвет</td>
+                <td class="table__field">Цвет:</td>
                 <td class="table__value">«Тиффани»/серый</td>
               </tr>
               <tr>
-                <td class="table__field">Диаметр</td>
+                <td class="table__field">Диаметр:</td>
                 <td class="table__value">25см</td>
               </tr>
               <tr>
-                <td class="table__field">Высота</td>
+                <td class="table__field">Высота:</td>
                 <td class="table__value">15см</td>
               </tr>
             </table>
             <div class="good-of-week__pic">
-              <img src="http://placekitten.com/195/236">
+              <img src="img/triple-set-mobile@1x.jpg" width="195" height="236">
             </div>
             <div class="good-of-week__price">Цена: 990 руб.
             </div>
@@ -71,7 +69,8 @@
             </div>
           </div>
         </div>
-          <div class="about-us">
+        <div class="about-us">
+            <h2 class="about-us__name">Коротко о нас</h2>
             <div class="about-us__item about-us__item--advantage1">
               <p>Экологически чистые материалы</p>
             </div>
@@ -90,55 +89,49 @@
             <div class="about-us__item about-us__item--advantage6">
               <p>Поставляется в подарочной упаковке</p>
             </div>
-          </div>
-          <div class="feedbacks">
-            <div class="feedback">
-              <h2 class="feedback__title">Отзывы</h2>
-              <div class="feedback__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-              </div>
-              <div class="feedback__user-name">Анастасия Красильникова
-              </div>
-              <div class="feedback__user-contact">@misssssiskras</div>
+        </div>
+        <div class="feedbacks">
+          <div class="feedback">
+            <h2 class="feedback__title">Отзывы</h2>
+            <div class="feedback__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </div>
-            <div class="feedbacks__switch feedbacks__switch--to-left">
+            <div class="feedback__user-name">Анастасия Красильникова
             </div>
-            <div class="feedbacks__switch feedbacks__switch--to-right">
+            <div class="feedback__user-contact">@misssssiskras</div>
             </div>
-            <div class="feedbacks__write_us feedbacks__btn">
+            <a class="feedbacks__switch feedbacks__switch--to-left">
+            </a>
+            <a class="feedbacks__switch feedbacks__switch--to-right">
+            </a>
+            <div class="feedbacks__write-us feedbacks__btn">
               <a href="#" class="btn">Написать</a>
             </div>
-          </div>
-          <div class="contacts">
-            <table class="contacts-table">
-              <tr>
-                <td class="contacts-table__field">e-mail:</td>
-                <td class="contacts-table__value">info@mimimishkashop.ru</td>
-              </tr>
-              <tr>
-                <td class="contacts-table__field">адрес:</td>
-                <td class="contacts-table__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-              </tr>
-            </table>
+        </div>
+        <div class="contacts">
+          <h3 class="contacts__title">Контакты</h3>
+          <table class="contacts-table">
+            <tr>
+              <td class="contacts-table__field">e-mail:</td>
+              <td class="contacts-table__value">info@mimimishkashop.ru</td>
+            </tr>
+            <tr>
+              <td class="contacts-table__field">адрес:</td>
+              <td class="contacts-table__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tr>
+          </table>
             <div class="contacts__map">
-              <img src="http://placekitten.com/320/457" width="320" height="457">
+              <img src="img/map-mobile@1x.jpg" width="320" height="457">
             </div>
             <div class="contacts__btn">
               <a href="#" class="btn">Напишите нам</a>
             </div>
-          </div>
-        </div>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="socials">
-        <div class="socials__link socials__link--inst">
-          <a href="#"></a>
-        </div>
-        <div class="socials__link socials__link--fb">
-          <a href="#"></a>
-        </div>
-        <div class="socials__link socials__link--tw">
-          <a href="#"></a>
-        </div>
+        <a href="#" class="socials__link socials__link--inst"></a>
+        <a href="#" class="socials__link socials__link--fb"></a>
+        <a href="#" class="socials__link socials__link--tw"></a>
       </div>
       <div class="developer">
         <p>Разработано</p>

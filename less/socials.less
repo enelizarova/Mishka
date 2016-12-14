@@ -1,0 +1,32 @@
+.socials {
+  padding: 20px 15%;
+  border-bottom: 1px solid #e5e5e5;
+}
+.socials__link {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  margin-right: 30px;
+  width: 30px;
+  height: 30px;
+  &--tw {
+    margin-right: 0;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+  }
+}
+.socials__link--inst::before {
+  background: url('../img/icon-insta.svg') no-repeat 0 0;
+}
+.socials__link--fb::before {
+  background: url('../img/icon-fb.svg') no-repeat 0 0;
+}
+.socials__link--tw::before {
+  background: url('../img/icon-twitter.svg') no-repeat 0 0;
+}
