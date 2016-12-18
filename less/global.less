@@ -1,11 +1,227 @@
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   color: @base-color;
   font-family: @base-fontfamily;
 }
+html {
+  height:100vh;
+}
+.content-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+.content-container {
+  padding: 0 30px;
+}
+@media (min-width: 768px) {
+  .content-wrapper {
+    width: @tablet-width;
+  }
+  .content-container {
+    padding: 0 50px;
+  }
+  .main-header__logo {
+    margin-left: 0;
+  }
+  .main-nav__container {
+    display: block;
+    width: 768px;
+    margin-bottom: -100px;
+  }
+  .main-nav__btn {
+    display: none;
+  }
+  .main-nav__items--global {
+    padding-left: 30px;
+  }
+  .main-nav__items--user {
+    margin-top: -180px;
+    float: right;
+  }
+  .main-nav__list {
+    display: inline-block;
+  }
+  .main-nav__item {
+    border-top: none;
+    &--search {
+      font-size: 0;
+    }
+    &--cart{
+      padding-left: 50px;
+    }
+    &--search,
+    &--cart {
+      border-left: 1px solid #ececec;
+    }
+  }
+  .main-nav__item--search::before {
+    left: 20px;
+  }
+  .main-nav__item--cart::before {
+    left: 20px;
+  }
+  .catalogue-item {
+    display: inline-block;
+    margin-right: -4px;
+    width: 334px;
+    box-sizing: border-box;
+    &--interior {
+      margin-left: 50px;
+    }
+    &--toy {
+      margin-right: 46px;
+    }
+  }
+  .good-of-week__offers-name {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: @up-text;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 30px;
+  }
+  .good-of-week__info {
+    width: 334px;
+    float: left;
+  }
+  .good-of-week__pic {
+    width: 334px;
+    float: right;
+  }
+  .about-us__column {
+    display: inline-block;
+    margin-right: -4px;
+    width: 334px;
+  }
+  .feedbacks {
+    background: url('../img/review@1x.jpg') no-repeat 0 0;
+    position: relative;
+  }
+  .feedback {
+    padding-top: 20px;
+  }
+  .feedback__content {
+    font-size: @up-text;
+    line-height: 30px;
+  }
+  .feedbacks__arrows {
+    float: right;
+  }
+  .feedbacks__switch {
+    border: none;
+  }
+  .feedbacks__write-us {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+  .contacts__title {
+    font-size: 43px;
+    line-height: 40px;
+    position: relative;
+  }
+  .contacts__title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    right: 0;
+    background: url('../img/icon-flag.svg') no-repeat 0 0;
+    }
+  .contacts-table {
+    font-size: @up-text;
+    line-height: 30px;
+  }
+  .contacts-table__container {
+    display: inline-block;
+    width: 334px;
+    margin-right: -4px;
+    vertical-align: top;
+  }
+  // с этим надо что-то сделать
+  .contacts__map img {
+    width: 100%;
+  }
+  .contacts__btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .main-footer__logo,
+  .socials,
+  .developer {
+    display: inline-block;
+    font-size: 0;
+    border: none;
+    vertical-align: top;
+  }
+  .developer__intro {
+    font-size: 19px;
+  }
+  .developer::after {
+    top: 20px;
+    right: -50px;
+  }
+}
+@media (min-width: 1150px) {
+  .content-wrapper {
+    min-width: @desktop-width;
+    max-width: @max-width;
+  }
+  .content-container {
+    padding: 0 50px;
+  }
+  .main-nav__container {
+    width: 1150px;
+  }
+  .main-nav__items--more {
+    display: block;
+  }
+  .main-header {
+    margin-left: 500px;
+  }
+  .main-nav__container {
+    margin-top: -80px;
+  }
+  .main-nav__items--user {
+    margin-top: -100px;
+  }
+  .good-of-week__offers-name {
+    left: 90px;
+  }
+  .good-of-week__name {
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .good-of-week__info {
+    margin-left: 175px;
+  }
+  .good-of-week__pic {
+    margin-top: -120px;
+  }
+  .about-us {
+    margin-left: 175px;
+  }
+  .contacts__container {
+    margin-left: 175px;
+    display: inline-block;
+    width: 350px;
+    margin-right: -4px;
+  }
+  .contacts__map {
+    display: inline-block;
+    margin-right: -4px;
+    width: 525px;
+  }
+  .contacts__title::after {
+    left: -70px;
+  }
+}
 .main-footer {
   margin-top: 40px;
   padding: 0 20px;
-  min-height: 160px;
 }
