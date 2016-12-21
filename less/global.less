@@ -21,26 +21,45 @@ html {
   .content-container {
     padding: 0 50px;
   }
-  .main-header__logo {
-    margin-left: 0;
-  }
+  // .main-header__logo {
+  //   margin-left: 0;
+  // }
+  // .main-nav__container {
+  //   display: block;
+  //   width: 768px;
+  //   margin-bottom: -100px;
+  // }
+  // .main-nav__items--global {
+  //   padding-left: 30px;
+  // }
+  // .main-nav__items--user {
+  //   margin-top: -180px;
+  //   float: right;
+  // }
+  //
   .main-nav__container {
-    display: block;
-    width: 768px;
-    margin-bottom: -100px;
-  }
-  .main-nav__btn {
-    display: none;
-  }
-  .main-nav__items--global {
-    padding-left: 30px;
-  }
-  .main-nav__items--user {
-    margin-top: -180px;
-    float: right;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
   .main-nav__list {
     display: inline-block;
+  }
+  .main-header__logo {
+    flex-grow: 1;
+    order: 1;
+    float: none;
+    margin-left: 0;
+  }
+  .main-nav__items--global {
+    order: 3;
+  }
+  .main-nav__items--user {
+    order: 2;
+    margin: 0;
+  }
+  .main-nav__btn {
+    display: none;
   }
   .main-nav__item {
     border-top: none;

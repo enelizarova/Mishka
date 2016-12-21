@@ -11,14 +11,14 @@
 <!--     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
     -->
     <div class="content-wrapper">
-        <header class="main-header clearfix">
-              <div class="content-container content-container--main-header">
-          <div class="main-header__logo">
-            <img src="img/logo-mobile.svg" width="86" height="35">
-          </div>
-          <nav class="main-nav main-nav--opened">
+        <header class="main-header">
+          <div class="content-container content-container--main-header">
+          <nav class="main-nav main-nav--opened clearfix">
             <button class="main-nav__btn"></button>
             <div class="main-nav__container clearfix">
+            <div class="main-header__logo">
+            <img src="img/logo-mobile.svg" width="86" height="35">
+          </div>
               <ul class="main-nav__items main-nav__items--global">
                 <li class="main-nav__list">
                   <a href="catalogue.html" class="main-nav__item main-nav__item--global">Каталог товаров</a>
@@ -52,8 +52,10 @@
           <h1 class="page-title__name">Милые штуки</br> ручной</br> работы для дома</h1>
         </div>
         <div class="catalogue">
+          <div class="catalogue-item__wrapper">
           <a href="" class="catalogue-item catalogue-item--interior">Предметы </br>интерьера</a>
           <a href="" class="catalogue-item catalogue-item--toy">Детские </br>игрушки</a>
+          </div>
           <div class="content-container">
             <div class="good-of-week clearfix">
               <h2 class="good-of-week__name">Вязаные корзинки</h2>
@@ -76,9 +78,9 @@
                 </table>
               </div>
               <div class="good-of-week__pic">
-                <img src="img/triple-set-mobile@1x.jpg" width="195" height="236">
+                <img src="img/triple-set-mobile@1x.jpg" width="100%" height="auto">
               </div>
-              <div class="good-of-week__info">
+              <div class="good-of-week__buy-info">
                 <div class="good-of-week__price">Цена: 990 руб.</div>
                 <div class="good-of-week__btn">
                   <a href="#" class="btn">Заказать</a>
@@ -144,6 +146,7 @@
                       <div class="contacts-table__value">г. Санкт-Петербург,</br> ул. Большая Конюшенная,</br> д. 19/8, офис 101</div>
                     </div>
                 </div>
+              </div>
               </div>
               <div class="contacts__map">
                 <img src="img/map-mobile@1x.jpg" width="320" height="457">
