@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -44,8 +45,8 @@
         </header>
       </div>
     <main>
-      <div class="main-container">
         <h1 class="page-name">Каталог товаров</h1>
+        <div class="content-container">
         <div class="catalogue-list">
           <div class="product">
             <a href="" class="product__pic">
@@ -67,10 +68,14 @@
               <img src="img/photo-2-mobile@1x.jpg" width="260" height="195">
             </a>
             <div class="product__wrapper">
+              <div class="product__info">
               <a class="product__name">Корзинка для белья</a>
               <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="product__pay-info">
               <p class="product__price">690 руб</p>
               <a class="product__cart" href=""></a>
+              </div>
             </div>
           </div>
           <div class="product">
@@ -78,10 +83,14 @@
               <img src="img/photo-3-mobile@1x.jpg" width="260" height="195">
             </a>
             <div class="product__wrapper">
+            <div class="product__info">
               <a class="product__name">Большая корзина для игрушек</a>
               <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="product__pay-info">
               <p class="product__price">1500 руб</p>
               <a href="" class="product__cart"></a>
+              </div>
             </div>
           </div>
         </div>
@@ -106,7 +115,7 @@
           <a href="#" class="socials__link socials__link--fb"></a>
           <a href="#" class="socials__link socials__link--tw"></a>
         </div>
-        <div class="developer">
+        <div class="developer clearfix">
           <p class="developer__intro">Разработано</p>
           <a href="#" class="developer__link"></a>
         </div>

@@ -1,3 +1,4 @@
+
 .product {
   border: 1px solid #ededed;
   margin-bottom: 30px;
@@ -23,12 +24,19 @@
   font-size: @base-text;
   font-weight: bold;
   line-height: 24px;
+  display: inline-block;
+  margin-right: -4px;
+  float: left;
+  vertical-align: top;
 }
 .product__cart {
   position: relative;
-  display: block;
+  display: inline-block;
+  font-size: 0;
   width: 22px;
   height: 20px;
+  float: right;
+  vertical-align: top;
   &::after {
     content: '';
     position: absolute;
