@@ -1,6 +1,6 @@
 .how-to-do {
   border: 1px solid #ececec;
-  // margin: 0 30px;
+  margin-bottom: 60px;
 }
 .how-to-do__name {
   padding: 0 90px;
@@ -8,20 +8,40 @@
   line-height: 24px;
   font-weight: bold;
   position: relative;
+  padding-top: 10px;
+  letter-spacing: 0.9px;
+  margin-bottom: 25px;
   &::before {
     content: '';
     position: absolute;
     width: 32px;
     height: 32px;
     background: url('../img/icon-video.svg') no-repeat 0 0;
-    top: 0;
-    left: 30px;
+    top: 15px;
+    left: 33px;
+  }
+}
+.how-to-do__video {
+  position: relative;
+  margin-bottom: 22px;
+  &::after {
+    position: absolute;
+    content: '';
+    background: url('../img/icon-play.svg') no-repeat 0 0;
+    top: 25%;
+    left: 30%;
+    width: 102px;
+    height: 78px;
   }
 }
 .how-to-do__text {
-  padding: 0 30px;
+  padding: 0 33px;
+  padding-right: 50px;
+  line-height: 24px;
+  font-size: @small-text;
 }
 .how-to-do__btn {
-  display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-left: 33px;
+  margin-right: 33px;
 }
