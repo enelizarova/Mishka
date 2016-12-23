@@ -17,7 +17,11 @@
             <button class="main-nav__btn"></button>
             <div class="main-nav__container clearfix">
             <div class="main-header__logo">
-            <img src="img/logo-mobile.svg" width="86" height="35">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Mishka">
+              </picture>
           </div>
               <ul class="main-nav__items main-nav__items--global">
                 <li class="main-nav__list">
@@ -165,7 +169,7 @@
       <footer class="main-footer">
       <div class="content-container content-container--footer">
         <div class="main-footer__logo">
-          <img src="img/logo-mobile.svg" width="100" height="35">
+          <img src="img/logo-footer.svg" width="100" height="35">
         </div>
         <div class="socials">
           <a href="#" class="socials__link socials__link--inst"></a>
