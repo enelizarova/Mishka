@@ -24,11 +24,11 @@
               </picture>
           </div>
               <ul class="main-nav__items main-nav__items--global">
-                <li class="main-nav__list">
+                <li class="main-nav__list main-nav__list--global">
                   <a href="catalogue.html" class="main-nav__item main-nav__item--global">Каталог товаров</a>
                 </li>
-                <li class="main-nav__list">
-                  <a href="form.html" class="main-nav__item main-nav__item--global">Вязание на заказ</a>
+                <li class="main-nav__list main-nav__list--global">
+                  <a href="form.html" class="main-nav__item main-nav__item--global main-nav__item--form">Вязание на заказ</a>
                 </li>
               </ul>
               <ul class="main-nav__items main-nav__items--user">
@@ -82,7 +82,11 @@
                 </table>
               </div>
               <div class="good-of-week__pic">
-                <img src="img/triple-set-mobile@1x.jpg" width="100%" height="auto">
+                <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x" alt="Вязаные корзинки"">
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+              </picture>
               </div>
               <div class="good-of-week__buy-info">
                 <div class="good-of-week__price">Цена: 990 руб.</div>
