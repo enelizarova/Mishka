@@ -11,14 +11,14 @@
 <!--     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
     -->
     <div class="content-wrapper">
-        <header class="main-header clearfix">
-              <div class="content-container content-container--main-header">
-          <div class="main-header__logo">
-            <img src="img/logo-mobile.svg" width="86" height="35">
-          </div>
-          <nav class="main-nav main-nav--opened">
+        <header class="main-header">
+          <div class="content-container content-container--main-header">
+          <nav class="main-nav main-nav--opened clearfix">
             <button class="main-nav__btn"></button>
             <div class="main-nav__container clearfix">
+            <div class="main-header__logo">
+            <img src="img/logo-mobile.svg" width="86" height="35">
+          </div>
               <ul class="main-nav__items main-nav__items--global">
                 <li class="main-nav__list">
                   <a href="catalogue.html" class="main-nav__item main-nav__item--global">Каталог товаров</a>
@@ -49,15 +49,17 @@
         </header>
       <main>
         <div class="page-title">
-          <h1 class="page-title__name">Милые штуки</br> ручной</br> работы для дома</h1>
+          <h1 class="page-title__name">Милые штуки ручной работы для дома</h1>
         </div>
         <div class="catalogue">
+          <div class="catalogue-item__wrapper">
           <a href="" class="catalogue-item catalogue-item--interior">Предметы </br>интерьера</a>
           <a href="" class="catalogue-item catalogue-item--toy">Детские </br>игрушки</a>
+          </div>
           <div class="content-container">
             <div class="good-of-week clearfix">
-              <h2 class="good-of-week__name">Вязаные корзинки</h2>
-              <div class="good-of-week__offers-name">Товар недели</div>
+              <div class="good-of-week__name">Вязаные корзинки
+              <div class="good-of-week__offers-name">Товар недели</div></div>
               <div class="good-of-week__info">
                 <p class="good-of-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
                 <table class="table">
@@ -76,9 +78,9 @@
                 </table>
               </div>
               <div class="good-of-week__pic">
-                <img src="img/triple-set-mobile@1x.jpg" width="195" height="236">
+                <img src="img/triple-set-mobile@1x.jpg" width="100%" height="auto">
               </div>
-              <div class="good-of-week__info">
+              <div class="good-of-week__buy-info">
                 <div class="good-of-week__price">Цена: 990 руб.</div>
                 <div class="good-of-week__btn">
                   <a href="#" class="btn">Заказать</a>
@@ -86,53 +88,56 @@
               </div>
             </div>
           </div>
+          </div>
           <div class="content-container">
             <div class="about-us">
               <h2 class="about-us__name">Коротко о нас</h2>
               <div class="about-us__column">
                 <div class="about-us__item about-us__item--advantage1">
-                  <p>Экологически чистые материалы</p>
+                  <p>Экологически<br> чистые материалы</p>
                 </div>
                 <div class="about-us__item about-us__item--advantage2">
-                  <p>Скандинавский стиль по российской цене</p>
+                  <p>Скандинавский стиль<br> по российской цене</p>
                 </div>
                 <div class="about-us__item about-us__item--advantage3">
-                  <p>Увеличивает лайки на фотографиях</p>
+                  <p>Увеличивает лайки<br> на фотографиях</p>
                 </div>
               </div>
               <div class="about-us__column">
                 <div class="about-us__item about-us__item--advantage4">
-                  <p>Связано вручную с любовью и умилением</p>
+                  <p>Связано вручную с<br> любовью и умилением</p>
                 </div>
                 <div class="about-us__item about-us__item--advantage5">
                   <p>Поддержка отечественного производителя</p>
                 </div>
                 <div class="about-us__item about-us__item--advantage6">
-                  <p>Поставляется в подарочной упаковке</p>
+                  <p>Поставляется в<br> подарочной упаковке</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="feedbacks clearfix">
             <div class="content-container">
-              <div class="feedback">
+              <div class="feedback clearfix">
                 <h2 class="feedback__title">Отзывы</h2>
                 <div class="feedback__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</div>
-                <div class="feedback__user-name">Анастасия Красильникова</div>
-                <div class="feedback__user-contact">@misssssiskras</div>
+                <div class="feedback__user-info">
+                  <div class="feedback__user-name">Анастасия Красильникова</div>
+                  <div class="feedback__user-contact">@misssssiskras</div>
+                  </div>
+                <div class="feedbacks__arrows">
+                  <a class="feedbacks__switch feedbacks__switch--to-left"></a>
+                  <a class="feedbacks__switch feedbacks__switch--to-right"></a>
+                </div>
               </div>
-              <div class="feedbacks__arrows">
-                <a class="feedbacks__switch feedbacks__switch--to-left"></a>
-                <a class="feedbacks__switch feedbacks__switch--to-right"></a>
-              </div>
-              <div class="feedbacks__write-us feedbacks__btn">
-                <a href="#" class="btn">Написать</a>
+              <div class="feedbacks__write-us">
+                <a href="#" class="btn btn--feedbacks">Написать</a>
               </div>
             </div>
           </div>
             <div class="contacts">
-              <div class="content-container">
-                <div class="contacts__container">
+              <div class="contacts__container clearfix">
+                <div class="content-container">
                   <h3 class="contacts__title">Контакты</h3>
                   <div class="contacts-table">
                     <div class="contacts-table__container">
@@ -145,8 +150,9 @@
                     </div>
                 </div>
               </div>
+              </div>
               <div class="contacts__map">
-                <img src="img/map-mobile@1x.jpg" width="320" height="457">
+                <iframe class="contacts__map--interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.8926726332636!2d30.215705316098866!3d59.98368998189259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696368ee993cf49%3A0x10d4ba6dd6a90439!2z0J_RgNC40LzQvtGA0YHQutC40Lkg0L_RgC4sIDEzN9C6MSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzM3NA!5e0!3m2!1sru!2sru!4v1482443459404" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
               <div class="content-container">
                 <div class="contacts__button">
@@ -157,7 +163,7 @@
       </main>
     </div>
       <footer class="main-footer">
-      <div class="content-container">
+      <div class="content-container content-container--footer">
         <div class="main-footer__logo">
           <img src="img/logo-mobile.svg" width="100" height="35">
         </div>
@@ -166,7 +172,7 @@
           <a href="#" class="socials__link socials__link--fb"></a>
           <a href="#" class="socials__link socials__link--tw"></a>
         </div>
-        <div class="developer">
+        <div class="developer clearfix">
           <p class="developer__intro">Разработано</p>
           <a href="#" class="developer__link"></a>
         </div>

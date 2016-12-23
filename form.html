@@ -2,19 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="content-wrapper">
-        <header class="main-header clearfix">
-              <div class="content-container content-container--main-header">
-          <div class="main-header__logo">
-            <img src="img/logo-mobile.svg" width="86" height="35">
-          </div>
-          <nav class="main-nav main-nav--opened">
+        <div class="content-wrapper">
+        <header class="main-header">
+          <div class="content-container content-container--main-header">
+          <nav class="main-nav main-nav--opened clearfix">
             <button class="main-nav__btn"></button>
             <div class="main-nav__container clearfix">
+            <div class="main-header__logo">
+            <img src="img/logo-mobile.svg" width="86" height="35">
+          </div>
               <ul class="main-nav__items main-nav__items--global">
                 <li class="main-nav__list">
                   <a href="catalogue.html" class="main-nav__item main-nav__item--global">Каталог товаров</a>
@@ -44,102 +45,111 @@
           </div>
         </header>
     <main>
-      <div class="main-container">
         <h1 class="page-name">Вязание на заказ</h1>
+        <div class="content-container">
           <p class="page-prew">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="order-form">
-            <article class="order-form__field">
-              <div class="order-form__legend">Тип</div>
+            <section class="order-form__field">
+              <div class="order-form__legend"><span class="order-form__legend-container">Тип</span></div>
               <div class="order-form__container">
-                <div class="order-form__item-wrapper">
+                <div class="order-form__item-wrapper order-form__item-wrapper--radio">
                   <input type="radio" id="accessory" name="form-radio" class="order-form__radio" checked="checked">
-                  <label for="accessory">Аксессуар для  интерьера</label>
+                  <span class="order-form__control--radio"></span>
+                  <label for="accessory" class="order-form__label">Аксессуар для  интерьера</label>
                 </div>
-                <div class="order-form__item-wrapper">
+                <div class="order-form__item-wrapper order-form__item-wrapper--radio">
                   <input type="radio" id="toy" name="form-radio" class="order-form__radio">
-                  <label for="toy">Детская игрушка</label>
+                  <span class="order-form__control--radio"></span>
+                  <label for="toy" class="order-form__label">Детская игрушка</label>
                 </div>
               <div>
-            </article>
-            <article class="order-form__field">
-              <div class="order-form__legend">Цвет</div>
+            </section>
+            <section class="order-form__field order-form__field--checkbox">
+              <div class="order-form__legend"><span class="order-form__legend-container">Цвет</span></div>
               <div class="order-form__container order-form__container--checkbox">
                 <div class="order-form__item-wrapper order-form__item-wrapper--checkbox">
                   <input type="checkbox" id="white" name="form-checkbox" class="order-form__checkbox" checked="checked">
-                  <label for="white">Белый</label>
+                  <span class="order-form__control--checkbox"></span>
+                  <label for="white" class="order-form__label">Белый</label>
                 </div>
                 <div class="order-form__item-wrapper order-form__item-wrapper--checkbox">
                   <input type="checkbox" id="gray" name="form-checkbox" class="order-form__checkbox" checked="checked">
-                  <label for="gray">Серый</label>
+                  <span class="order-form__control--checkbox"></span>
+                  <label for="gray" class="order-form__label">Серый</label>
                 </div>
                 <div class="order-form__item-wrapper order-form__item-wrapper--checkbox">
                   <input type="checkbox" id="Tiffani" name="form-checkbox" class="order-form__checkbox">
-                  <label for="Tiffani">"Тиффани"</label>
+                  <span class="order-form__control--checkbox"></span>
+                  <label for="Tiffani" class="order-form__label">"Тиффани"</label>
                 </div>
                 <div class="order-form__item-wrapper order-form__item-wrapper--checkbox">
                   <input type="checkbox" id="black" name="form-checkbox" class="order-form__checkbox">
-                  <label for="black">Черный</label>
+                  <span class="order-form__control--checkbox"></span>
+                  <label for="black" class="order-form__label">Черный</label>
                 </div>
                 <div class="order-form__item-wrapper order-form__item-wrapper--checkbox">
                   <input type="checkbox" id="pink" name="form-checkbox" class="order-form__checkbox">
-                  <label for="pink">Розовый</label>
+                  <span class="order-form__control--checkbox"></span>
+                  <label for="pink" class="order-form__label">Розовый</label>
                 </div>
                 <div class="order-form__item-wrapper order-form__item-wrapper--checkbox">
                   <input type="checkbox" id="orange" name="form-checkbox" class="order-form__checkbox">
-                  <label for="orange">Оранжевый</label>
+                  <span class="order-form__control--checkbox"></span>
+                  <label for="orange" class="order-form__label">Оранжевый</label>
                 </div>
               </div>
-            </article>
-            <article class="order-form__field">
-              <div class="order-form__legend">ФИО</div>
+            </section>
+            <section class="order-form__field order-form__field--username">
+              <div class="order-form__legend"><span class="order-form__legend-container">ФИО</span></div>
               <div class="order-form__container">
                 <div class="order-form__item-wrapper order-form__item-wrapper--username">
                   <input type="text" placeholder="Введите ваше имя*" id="username" name="form-text" class="order-form__text order-form__text--username">
-                  <label for="username">Имя:</label>
+                  <label for="username" class="order-form__label--username">Имя:</label>
                 </div>
                 <div class="order-form__item-wrapper order-form__item-wrapper--username">
                   <input type="text" placeholder="Укажите фамилию*" id="usersoname" name="form-text" class="order-form__text order-form__text--username">
-                  <label for="usersoname">Фамилия:</label>
+                  <label for="usersoname" class="order-form__label--username">Фамилия:</label>
                 </div>
                 <div class="order-form__item-wrapper order-form__item-wrapper--username">
                   <input type="text" placeholder="Отчество, если желаете" id="second-username" name="form-text" class="order-form__text order-form__text--username">
-                  <label for="second-username">Отчество:</label>
+                  <label for="second-username" class="order-form__label--username">Отчество:</label>
                 </div>
-            </article>
-            <article class="order-form__field">
-              <div class="order-form__legend">Тел</div>
-              <input type="tel" placeholder="+7 ХХХ ХХ ХХ*" name="form-tel" class="order-form__tel">
-            </article>
-            <article class="order-form__field">
-              <div class="order-form__legend">E-mail</div>
-              <input type="email" placeholder="Ваш Email*" name="form-email" class="order-form__email">
-            </article>
-            <article class="order-form__field">
-              <div class="order-form__legend">Доп</div>
-              <input type="textarea" placeholder="Опишите все ваши  пожелания к заказу" name="form-textarea" class="order-form__texrarea">
-              <p>Опишите все ваши  пожелания к заказу</p>
-            </article>
-            <input type="button" name="form-btn" class="btn" placeholder="Отправить заказ" name="form-button">
+            </section>
+            <section class="order-form__field order-form__field--tel">
+                <div class="order-form__legend"><span class="order-form__legend-container">Тел</span></div>
+                <input type="tel" placeholder="+7 ХХХ ХХ ХХ*" name="form-tel" class="order-form__tel">
+            </section>
+            <section class="order-form__field order-form__field--email">
+                <div class="order-form__legend"><span class="order-form__legend-container">E-mail</span></div>
+                <input type="email" placeholder="Ваш Email*" name="form-email" class="order-form__email">
+            </section>
+            <section class="order-form__field">
+              <div class="order-form__legend"><span class="order-form__legend-container">Доп</span></div>
+              <textarea placeholder="Опишите все ваши  пожелания к заказу" name="form-textarea" class="order-form__texrarea"></textarea>
+            </section>
+            <section class="order-form__field order-form__field--total">
+              <p class="order-form__important-info">*Поля обязательны для заполнения</p>
+              <input type="button" name="form-btn" class="btn btn--form" value="Отправить заказ" name="form-button">
+            </section>
           </form>
       </div>
     </main>
     </div>
-    <footer class="main-footer">
-      <div class="socials">
-        <div class="socials__link socials__link--inst">
-          <a href="#"></a>
+      <footer class="main-footer">
+      <div class="content-container content-container--footer">
+        <div class="main-footer__logo">
+          <img src="img/logo-mobile.svg" width="100" height="35">
         </div>
-        <div class="socials__link socials__link--fb">
-          <a href="#"></a>
+        <div class="socials">
+          <a href="#" class="socials__link socials__link--inst"></a>
+          <a href="#" class="socials__link socials__link--fb"></a>
+          <a href="#" class="socials__link socials__link--tw"></a>
         </div>
-        <div class="socials__link socials__link--tw">
-          <a href="#"></a>
+        <div class="developer clearfix">
+          <p class="developer__intro">Разработано</p>
+          <a href="#" class="developer__link"></a>
         </div>
-      </div>
-      <div class="developer">
-        <p>Разработано</p>
-        <a href="#" class="developer__link"></a>
-      </div>
-    </footer>
+        </div>
+      </footer>
   </body>
 </html>

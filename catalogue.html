@@ -2,19 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <div class="content-wrapper">
-      <div class="content-container content-container--main-header">
-        <header class="main-header clearfix">
-          <div class="main-header__logo">
-            <img src="img/logo-mobile.svg" width="86" height="35">
-          </div>
-          <nav class="main-nav main-nav--opened">
+    <div class="content-wrapper">
+        <header class="main-header">
+          <div class="content-container content-container--main-header">
+          <nav class="main-nav main-nav--opened clearfix">
             <button class="main-nav__btn"></button>
             <div class="main-nav__container clearfix">
+            <div class="main-header__logo">
+            <img src="img/logo-mobile.svg" width="86" height="35">
+          </div>
               <ul class="main-nav__items main-nav__items--global">
                 <li class="main-nav__list">
                   <a href="catalogue.html" class="main-nav__item main-nav__item--global">Каталог товаров</a>
@@ -41,22 +42,22 @@
               </ul>
             </div>
           </nav>
+          </div>
         </header>
-      </div>
     <main>
-      <div class="main-container">
         <h1 class="page-name">Каталог товаров</h1>
+        <div class="content-container">
         <div class="catalogue-list">
           <div class="product">
             <a href="" class="product__pic">
-              <img src="img/photo-1-mobile@1x.jpg" width="260" height="195">
+              <img src="img/photo-1-mobile@1x.jpg" width="100%" height="auto">
             </a>
             <div class="product__wrapper">
               <div class="product__info">
                 <a class="product__name">Зайчик-попрыгайчик</a>
                 <p class="product__parameters">Рост 30 см, вес 200 г</p>
               </div>
-              <div class="product__pay-info">
+              <div class="product__pay-info clearfix">
                 <p class="product__price">1200 руб</p>
                 <a class="product__cart" href=""></a>
               </div>
@@ -64,40 +65,50 @@
           </div>
           <div class="product">
             <a href="" class="product__pic">
-              <img src="img/photo-2-mobile@1x.jpg" width="260" height="195">
+              <img src="img/photo-2-mobile@1x.jpg" width="100%" height="auto">
             </a>
             <div class="product__wrapper">
+              <div class="product__info ">
               <a class="product__name">Корзинка для белья</a>
               <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="product__pay-info clearfix">
               <p class="product__price">690 руб</p>
               <a class="product__cart" href=""></a>
+              </div>
             </div>
           </div>
           <div class="product">
             <a href="" class="product__pic">
-              <img src="img/photo-3-mobile@1x.jpg" width="260" height="195">
+              <img src="img/photo-3-mobile@1x.jpg" width="100%" height="auto">
             </a>
             <div class="product__wrapper">
+            <div class="product__info">
               <a class="product__name">Большая корзина для игрушек</a>
               <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="product__pay-info clearfix">
               <p class="product__price">1500 руб</p>
               <a href="" class="product__cart"></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="how-to-do">
+        <div class="how-to-do clearfix">
           <h2 class="how-to-do__name">Процесс поизводства</h2>
           <div class="how-to-do__video">
             <img src="img/video-mobile@1x.jpg" width="260" height="150">
           </div>
-          <p class="how-to-do__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="how-to-do__btn btn">Сделать заказ</a>
+          <div class="how-to-do__info">
+            <p class="how-to-do__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="how-to-do__btn btn">Сделать заказ</a>
+          </div>
         </div>
       </div>
     </main>
     </div>
       <footer class="main-footer">
-      <div class="content-container">
+      <div class="content-container content-container--footer">
         <div class="main-footer__logo">
           <img src="img/logo-mobile.svg" width="100" height="35">
         </div>
@@ -106,7 +117,7 @@
           <a href="#" class="socials__link socials__link--fb"></a>
           <a href="#" class="socials__link socials__link--tw"></a>
         </div>
-        <div class="developer">
+        <div class="developer clearfix">
           <p class="developer__intro">Разработано</p>
           <a href="#" class="developer__link"></a>
         </div>

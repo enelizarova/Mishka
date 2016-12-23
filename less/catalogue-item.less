@@ -5,14 +5,12 @@
   background: @main-theme-color;
   position: relative;
   display: block;
-  padding: 30px;
+  padding: 28px 30px;
   text-decoration: none;
   line-height: 24px;
   &::after {
     content: '';
     position: absolute;
-    top: 30px;
-    right: 30px;
   }
   &--toy {
     background: #56c3b2;
@@ -20,11 +18,18 @@
 }
 .catalogue-item--interior::after {
   background: url('../img/icon-interior.svg') no-repeat 0 0;
-    width: 40px;
-    height: 60px;
+  width: 40px;
+  height: 60px;
+  top: 25px;
+  right: 37px;
 }
 .catalogue-item--toy::after {
   background: url('../img/icon-toy.svg') no-repeat 0 0;
   width: 60px;
   height: 60px;
+  top: 20px;
+  right: 30px;
+}
+.catalogue-item__wrapper {
+  margin-bottom: 28px;
 }

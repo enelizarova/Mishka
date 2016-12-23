@@ -1,27 +1,31 @@
 .feedbacks {
-  margin-bottom: 40px;
+  margin-bottom: 84px;
 }
-.feedback-title {
+.feedback__title {
   font-size: @h2;
   font-weight: bold;
+  margin-bottom: 26px;
 }
 .feedback__content {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  line-height: 30px;
 }
 .feedback__user-name {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  letter-spacing: 0.6px;
 }
 .feedback__user-contact {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
+  font-size: 18px;
 }
 .feedbacks__switch {
   display: inline-block;
-  padding: 25px 65px;
+  padding: 25px 64px;
   border: 1px solid #ececec;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 9px;
   &--to-right {
     margin-left: -4px;
     border-left: none;
@@ -38,12 +42,14 @@
 .feedbacks__switch--to-left::before {
   background-image: url('../img/icon-left-arrow.svg');
   left: 50%;
-  margin-left: -25px;
+  margin-left: -26px;
+  top: 12px;
 }
 .feedbacks__switch--to-right::before {
   background-image: url('../img/icon-right-arrow.svg');
   right: 50%;
-  margin-right: -25px;
+  margin-right: -26px;
+  top: 12px;
 }
 .feedbacks__write-us {
 
