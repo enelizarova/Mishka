@@ -324,18 +324,49 @@ html {
     width: 230px;
     margin: 0 auto;
   }
+  .product {
+    flex-direction: row;
+  }
+  .product__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .product__pic,
   .product__wrapper {
-    display: inline-block;
-    vertical-align: top;
     width: 334px;
+  }
+  .product__pic {
+    margin-bottom: 0;
   }
   .product__price,
   .product__cart {
     display: inline-block;
   }
+  .how-to-do {
+    display: flex;
+    flex-direction: column;
+  }
+  .how-to-do__name {
+    order: 1;
+  }
+  .how-to-do__video {
+    order: 0;
+  }
+  .how-to-do__info {
+    order: 2;
+  }
+  .order-form__field {
+    flex-direction: row;
+  }
   .order-form__legend {
     width: 167px;
+    &::after {
+      display: none;
+    }
+  }
+  .order-form__item-wrapper--username {
+    flex-direction: row;
   }
   .order-form__container {
     width: 501px;
@@ -360,6 +391,13 @@ html {
   .order-form__email,
   .order-form__texrarea {
     flex-grow: 1;
+  }
+  .order-form__important-info {
+    order: 1;
+  }
+  .content-container--footer {
+    display: flex;
+    justify-content: space-around;
   }
   .main-footer__logo,
   .socials,
@@ -393,31 +431,80 @@ html {
     display: block;
   }
   .main-header {
-    margin-left: 500px;
   }
   .main-nav__container {
-    margin-top: -80px;
+  }
+  .main-nav__items--global {
+    order: 1;
+    background: none;
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  .main-header__logo {
+    order: 2
   }
   .main-nav__items--user {
-    margin-top: -100px;
+    order: 3;
+  }
+  .main-nav__items--more {
+    order: 4;
+    padding: 0;
+    margin-right: 50px;
+    background: #f9f9f9;
+    flex-grow: 1;
+    position: relative;
+    border-top: 1px solid #ececec;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 100%;
+      left: -50px;
+      top: -1px;
+      background: #f9f9f9;
+      border-top: 1px solid #ececec;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 100%;
+      right: -50px;
+      top: -1px;
+      background: #f9f9f9;
+      border-top: 1px solid #ececec;
+    }
+  }
+  .main-nav__item--new,
+  .main-nav__item--sale {
+    display: inline-block;
+  }
+  .main-nav__item--new {
+    padding-left: 0;
   }
   .catalogue-item {
     width: 525px;
   }
+  .good-of-week {
+    position: relative;
+  }
   .good-of-week__offers-name {
-    left: 90px;
+    left: -100px;
   }
   .good-of-week__name {
     margin-left: 175px;
     font-size: 53px;
     line-height: 57px;
-    position: relative;
+    position: absolute;
   }
   .good-of-week__info {
     margin-left: 175px;
+    margin-top: 70px;
   }
   .good-of-week__pic {
-    margin-top: -120px;
+    min-width: 525px;
   }
   .about-us {
     margin-left: 175px;
@@ -435,13 +522,39 @@ html {
     width: 525px;
     vertical-align: top;
   }
+  .contacts__button {
+    float: left;
+    margin-top: -150px;
+  }
   .contacts__title::after {
     left: -70px;
   }
+  .catalogue-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .product {
-    display: inline-block;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
     width: 318px;
+  }
+  .product__pic {
+    width: 100%;
+  }
+  .product__wrapper {
+    width: 230px;
+  }
+  .how-to-do {
+    display: block;
+  }
+  .how-to-do__video {
+    float: left;
+    width: 680px;
+  }
+  .how-to-do__name,
+  .how-to-do__info {
+    float: right;
+    width: 350px;
   }
   .order-form__legend {
     width: 175px;

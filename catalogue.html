@@ -7,15 +7,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <div class="content-wrapper">
-      <div class="content-container content-container--main-header">
-        <header class="main-header clearfix">
-          <div class="main-header__logo">
-            <img src="img/logo-mobile.svg" width="86" height="35">
-          </div>
-          <nav class="main-nav main-nav--opened">
+    <div class="content-wrapper">
+        <header class="main-header">
+          <div class="content-container content-container--main-header">
+          <nav class="main-nav main-nav--opened clearfix">
             <button class="main-nav__btn"></button>
             <div class="main-nav__container clearfix">
+            <div class="main-header__logo">
+            <img src="img/logo-mobile.svg" width="86" height="35">
+          </div>
               <ul class="main-nav__items main-nav__items--global">
                 <li class="main-nav__list">
                   <a href="catalogue.html" class="main-nav__item main-nav__item--global">Каталог товаров</a>
@@ -42,15 +42,15 @@
               </ul>
             </div>
           </nav>
+          </div>
         </header>
-      </div>
     <main>
         <h1 class="page-name">Каталог товаров</h1>
         <div class="content-container">
         <div class="catalogue-list">
           <div class="product">
             <a href="" class="product__pic">
-              <img src="img/photo-1-mobile@1x.jpg" width="260" height="195">
+              <img src="img/photo-1-mobile@1x.jpg" width="100%" height="auto">
             </a>
             <div class="product__wrapper">
               <div class="product__info">
@@ -65,7 +65,7 @@
           </div>
           <div class="product">
             <a href="" class="product__pic">
-              <img src="img/photo-2-mobile@1x.jpg" width="260" height="195">
+              <img src="img/photo-2-mobile@1x.jpg" width="100%" height="auto">
             </a>
             <div class="product__wrapper">
               <div class="product__info ">
@@ -80,7 +80,7 @@
           </div>
           <div class="product">
             <a href="" class="product__pic">
-              <img src="img/photo-3-mobile@1x.jpg" width="260" height="195">
+              <img src="img/photo-3-mobile@1x.jpg" width="100%" height="auto">
             </a>
             <div class="product__wrapper">
             <div class="product__info">
@@ -94,19 +94,21 @@
             </div>
           </div>
         </div>
-        <div class="how-to-do">
+        <div class="how-to-do clearfix">
           <h2 class="how-to-do__name">Процесс поизводства</h2>
           <div class="how-to-do__video">
             <img src="img/video-mobile@1x.jpg" width="260" height="150">
           </div>
-          <p class="how-to-do__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="how-to-do__btn btn">Сделать заказ</a>
+          <div class="how-to-do__info">
+            <p class="how-to-do__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="how-to-do__btn btn">Сделать заказ</a>
+          </div>
         </div>
       </div>
     </main>
     </div>
       <footer class="main-footer">
-      <div class="content-container">
+      <div class="content-container content-container--footer">
         <div class="main-footer__logo">
           <img src="img/logo-mobile.svg" width="100" height="35">
         </div>
