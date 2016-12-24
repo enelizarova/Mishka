@@ -2,7 +2,7 @@ body {
   min-width: 320px;
   margin: 0 auto;
   color: @base-color;
-  font-family: @base-fontfamily;
+  font-family: @base-fontfamily, "Arial", sans-serif;
 }
 html {
   height: 100vh;
@@ -75,16 +75,30 @@ html {
       background: #f9f9f9;
       border-top: 1px solid #ececec;
     }
-    &::after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 100%;
-      right: -50px;
-      top: -1px;
-      background: #f9f9f9;
-      border-top: 1px solid #ececec;
-    }
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   width: 50px;
+    //   height: 100%;
+    //   right: -50px;
+    //   top: -1px;
+    //   background: #f9f9f9;
+    //   border-top: 1px solid #ececec;
+    // }
+  }
+  .main-nav__items--delivery::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    right: -50px;
+    top: -1px;
+    background: #f9f9f9;
+    border-top: 1px solid #ececec;
+  }
+  .main-nav__items--delivery {
+    order: 5;
+    display: block;
   }
   .main-nav__items--darken,
   .main-nav__items--darken::before,
@@ -404,8 +418,29 @@ html {
   .order-form__texrarea {
     flex-grow: 1;
   }
+  .order-form__email {
+    padding-bottom: 10px;
+  }
+  .order-form__tel-pic {
+    bottom: 30px;
+    right: 25px;
+  }
+  .order-form__email-pic {
+    bottom: 25px;
+    right: 21px;
+  }
+  .order-form__textarea {
+    flex-grow: 1;
+  }
   .order-form__important-info {
     order: 1;
+  }
+  .order-form__field--total {
+    justify-content: space-between;
+  }
+  .order-form__checkbox:checked + .order-form__control--checkbox::after {
+    top: 12px;
+    left: 10px;
   }
   .content-container--footer {
     display: flex;
@@ -653,16 +688,6 @@ html {
       background: #f9f9f9;
       border-top: 1px solid #ececec;
     }
-    &::after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 100%;
-      right: -50px;
-      top: -1px;
-      background: #f9f9f9;
-      border-top: 1px solid #ececec;
-    }
   }
   .main-nav__items--darken:not(.main-nav__items--global),
   .main-nav__items--darken::before,
@@ -899,6 +924,12 @@ html {
     width: 700px;
     flex-grow: 0;
     box-sizing: border-box;
+  }
+  .order-form__tel-pic {
+    right: 180px;
+  }
+  .order-form__tel-email {
+    right: 180px;
   }
   .order-form__container--checkbox {
     width: 750px;
