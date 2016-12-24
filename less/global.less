@@ -892,6 +892,44 @@ html {
   .order-form__item-wrapper--checkbox {
     width: 33.3%;
   }
+  .order-form__container,
+  .order-form__tel,
+  .order-form__email,
+  .order-form__textarea {
+    width: 700px;
+    flex-grow: 0;
+    box-sizing: border-box;
+  }
+  .order-form__container--checkbox {
+    width: 750px;
+    justify-content: space-between;
+  }
+  .order-form__container--checkbox:nth-child(2n) .order-form__label {
+    padding-left: 80px;
+  }
+  .order-form__item-wrapper--checkbox:nth-child(2n) .order-form__control--checkbox {
+    margin-left: 0;
+  }
+  .order-form__item-wrapper--checkbox {
+    width: 225px;
+  }
+  .order-form__field .order-form__legend--checkbox {
+    margin-top: 4px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  .order-form__textarea {
+    min-height: 140px;
+  }
+  .btn--form {
+    margin-left: 175px;
+  }
+  .order-form___field--total {
+    justify-content: space-between;
+  }
+  .order-form__important-info {
+    margin-right: 185px;
+  }
   .content-container--footer {
     justify-content: space-between;
   }
