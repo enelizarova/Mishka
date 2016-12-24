@@ -415,7 +415,7 @@ html {
   }
   .page-name {
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
     padding-top: 35px;
     font-size: 43px;
     line-height: 50px;
@@ -461,6 +461,103 @@ html {
     margin-bottom: 44px;
     margin-left: 40px;
     margin-right: 40px;
+  }
+  .page-prew {
+    font-size: @up-text;
+    line-height: 30px;
+    margin-bottom: 70px;
+  }
+  .order-form__label {
+    font-size: 19px;
+    line-height: 18px;
+    padding-top: 0;
+    padding-left: 80px;
+  }
+  .order-form__radio + .order-form__control--radio {
+    width: 50px;
+    height: 50px;
+    margin-top: -16px;
+  }
+  .order-form__radio:checked + .order-form__control--radio::after {
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 14px;
+  }
+  .order-form__item-wrapper--radio {
+    margin-bottom: 40px;
+  }
+  .order-form__field--radio {
+    margin-bottom: 20px;
+  }
+  .order-form__wrapper,
+  .order-form__legend-container--fill,
+  .order-form__tel--fill,
+  .order-form__email--fill {
+    background-color: @background-color;
+  }
+  .order-form__wrapper {
+    padding-top: 62px;
+    padding-bottom: 15px;
+    margin-bottom: 65px;
+  }
+  .order-form__checkbox + .order-form__control--checkbox {
+    width: 50px;
+    height: 50px;
+    margin-top: -15px;
+  }
+  .order-form__item-wrapper--checkbox {
+    margin-bottom: 40px;
+  }
+  .order-form__container--checkbox:nth-child(2n) .order-form__label {
+    padding-left: 90px;
+  }
+  .order-form__item-wrapper--checkbox:nth-child(2n) .order-form__control--checkbox {
+    margin-left: 10px;
+  }
+  .order-form__label--username {
+    padding-left: 0;
+    margin-right: 27px;
+  }
+  .order-form__text--username,
+  .order-form__tel,
+  .order-form__email,
+  .order-form__texrarea {
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 20px;
+  }
+  .order-form__tel,
+  .order-form__email {
+    align-self: baseline;
+  }
+  .order-form__field--tell,
+  .order-form__field--email {
+    margin-bottom: 26px;
+  }
+  .order-form__item-wrapper--username {
+    margin-bottom: 37px;
+  }
+  .order-form__wrapper--text {
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+  }
+  .order-form__legend--textarea {
+    margin-top: 15px;
+  }
+  .order-form__important-info {
+    font-size: @up-text;
+    line-height: 30px;
+    align-self: flex-end;
+  }
+  .btn--form {
+    width: 230px;
+  }
+  .order-form__field--textarea {
+    margin-bottom: 25px;
+  }
+  .orddr-form__field--total {
+    justify-content: space-between;
   }
   .main-footer__logo,
   .socials,
@@ -593,7 +690,7 @@ html {
     font-size: 50px;
     line-height: 57px;
     padding-top: 22px;
-    margin-bottom: 150px;
+    margin-bottom: 155px;
   }
   .page-title__name {
     font-size: 53px;
@@ -703,19 +800,43 @@ html {
   .product {
     display: flex;
     flex-direction: column;
-    width: 318px;
+    min-height: 660px;
+    justify-content: flex-start;
   }
   .product__pic {
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
   }
   .product__wrapper {
-    width: 230px;
-    padding-top: 20px;
+    width: 255px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    min-height: 160px;
   }
-  .product__info {
-    margin-bottom: 43px;
+  .product__name {
+    display: block;
+    margin-bottom: 8px;
   }
+  .product__pay-info {
+    padding-top: 25px;
+    margin-bottom: 10px;
+  }
+  .product__parameters {
+    font-size: @base-text;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .product__cart {
+    padding: 0;
+  }
+  .product__cart::after {
+    top: 0;
+  }
+  // .product__info {
+  //   margin-bottom: 43px;
+  // }
   .product__price {
     margin: 0;
     padding: 0;
@@ -723,15 +844,43 @@ html {
   }
   .how-to-do {
     display: block;
+    margin-bottom: 105px;
   }
   .how-to-do__video {
     float: left;
     width: 680px;
+    padding: 0;
+    margin-bottom: -4px;
+    &::after {
+      top: 190px;
+      left: 300px;
+    }
   }
   .how-to-do__name,
   .how-to-do__info {
     float: right;
     width: 350px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 58px;
+  }
+  .how-to-do__name {
+    margin-top: 88px;
+    &::before {
+      top: -45px;
+      left: 61px;
+    }
+  }
+  .how-to-do__text {
+    padding: 0;
+    margin-bottom: 42px;
+  }
+  .how-to-do__btn {
+    margin: 0;
+  }
+  .page-prew {
+    margin-left: 175px;
+    width: 700px;
   }
   .order-form__legend {
     width: 175px;
@@ -755,7 +904,7 @@ html {
   .developer__link::after {
     top: -8px;
     right: -15px;
-    }
+  }
 }
 .main-footer {
   margin-top: 40px;
