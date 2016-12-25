@@ -1,7 +1,6 @@
 .about-us {
   font-size: @up-text;
   font-weight: bold;
-    // margin: 0 25px;
 }
 .about-us__name {
   font-size: @h2;
@@ -59,4 +58,40 @@
   background: url('../img/icon-feature-6.svg') no-repeat 0 0;
   top: -4px;
   left: 2px;
+}
+@media (min-width: 768px) {
+  .about-us {
+    margin-bottom: 28px;
+  }
+  .about-us__name {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+  .about-us__column {
+    display: inline-block;
+    margin-right: -4px;
+    width: 334px;
+    vertical-align: top;
+    font-size: 20px;
+  }
+  .about-us__item {
+    margin-bottom: 18px;
+  }
+}
+@media (min-width: 1150px) {
+  .about-us {
+    margin-left: 175px;
+    margin-bottom: 35px;
+  }
+  .about-us__name {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .about-us__column {
+    margin-right: 15px;
+  }
+  .about-us__column::last-child {
+    margin-right: 0;
+  }
 }
