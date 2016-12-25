@@ -3,7 +3,7 @@
   position: relative;
   font-weight: bold;
   line-height: 18px;
-  padding-left: 16px;
+  padding-left: 38px;
 }
 .developer__intro {
   margin: 0;
@@ -15,7 +15,7 @@
   width: 33px;
   height: 33px;
   float: right;
-  margin-right: 10px;
+  margin-right: 30px;
     &::after {
     content: '';
     position: absolute;
@@ -27,19 +27,19 @@
   }
 }
 @media (min-width: 768px) {
-    .developer {
-          display: inline-block;
+  .developer {
+    display: inline-block;
     font-size: 0;
     border: none;
     vertical-align: top;
     padding-top: 65px;
     }
-      .developer__intro {
+  .developer__intro {
     font-size: 19px;
   }
-  .developer::after {
-    top: 20px;
-    right: -50px;
+  .developer__link::after {
+    top: -4px;
+    right: -35px;
   }
 }
 @media (min-width: 1150px) {

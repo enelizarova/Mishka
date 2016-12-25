@@ -5,12 +5,12 @@
 .good-of-week::before {
   content: '';
   position: absolute;
-  background: url('../img/bg-zigzag-line.svg') repeat 0 0;
+  background: url('../img/bg-zigzag-line.svg') repeat-x 0 0;
   left: 0;
   bottom: -40px;
   width: 100%;
   height: 7px;
-  background-size: contain;
+  background-size: cover;
 }
 
 .good-of-week__name {
@@ -48,7 +48,10 @@
 }
 @media (min-width: 768px) {
   .good-of-week {
-    margin-bottom: 118px;
+    margin-bottom: 92px;
+    &::before {
+      height: 15px;
+    }
   }
   .good-of-week__name {
     font-size: 43px;
@@ -67,7 +70,7 @@
     width: 30px;
   }
   .good-of-week__info {
-    width: 334px;
+    width: 280px;
     float: left;
     vertical-align: top;
     margin-top: 0;
@@ -99,6 +102,10 @@
 @media (min-width: 1150px) {
   .good-of-week {
     position: relative;
+    &::before {
+      height: 20px;
+      bottom: -70px;
+    }
   }
   .good-of-week__offers-name {
     left: -125px;
@@ -113,8 +120,8 @@
   }
   .good-of-week__info {
     margin-left: 175px;
-    margin-top: 165px;
-    margin-bottom: 60px;
+    margin-top: 170px;
+    margin-bottom: 85px;
   }
   .good-of-week__text {
     margin-bottom: 45px;

@@ -205,6 +205,12 @@
     order: 1;
     text-align: left;
     flex-grow: 1;
+    padding: 0;
+    height: 88px;
+  }
+  .page-header__logo img {
+    width: 110px;
+    height: 92px;
   }
   .main-nav__item {
     display: inline-block;
@@ -302,13 +308,20 @@
   .main-nav__list {
     order: -2;
     background: none;
+    flex-grow: 0;
     &::before {
       display: none;
     }
   }
+  .page-header__logo {
+    padding-left: 40px;
+  }
+  .page-header__logo img {
+    width: 150px;
+  }
 
   .main-nav__item {
-    padding: 30px 35px 34px 34px;
+    padding: 30px 45px 34px 34px;
     font-size: 17px;
     border-left: 1px solid @border-color;
 
@@ -340,7 +353,7 @@
   }
   .main-nav__hidden-item {
     display: block;
-    padding-top: 3px;
+    padding-top: 17px;
     padding-left: 34px;
     font-size: 15px;
     border: none;
