@@ -2,30 +2,41 @@
   position: relative;
   margin-bottom: 70px;
 }
+.good-of-week::before {
+  content: '';
+  position: absolute;
+  background: url('../img/bg-zigzag-line.svg') repeat-x 0 0;
+  left: 0;
+  bottom: -40px;
+  width: 100%;
+  height: 7px;
+  background-size: cover;
+}
+
 .good-of-week__name {
   font-size: @h2;
   font-weight: bold;
   letter-spacing: 0.9px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 .good-of-week__info {
-  margin-top: 21px;
+  margin-bottom: 27px;
   line-height: 24px;
 }
-.good-of-week__buy-info {
-  margin-top: 25px;
-}
 .good-of-week__text {
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 .good-of-week__offers-name {
   color: @main-theme-color;
   font-size: @up-text;
   font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 6px;
+  letter-spacing: 0.1px;
 }
 .good-of-week__pic {
-  margin-top: -5px;
   margin: 0 auto;
+  margin-bottom: 23px;
   width: 100%;
   height: auto;
 }
@@ -33,4 +44,92 @@
   font-size: @up-text;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 26px;
+}
+@media (min-width: 768px) {
+  .good-of-week {
+    margin-bottom: 92px;
+    &::before {
+      height: 15px;
+    }
+  }
+  .good-of-week__name {
+    font-size: 43px;
+    line-height: 50px;
+    position: relative;
+    margin-bottom: 55px;
+  }
+  .good-of-week__offers-name {
+    position: absolute;
+    bottom: 7px;
+    right: 70px;
+    font-size: @up-text;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 30px;
+  }
+  .good-of-week__info {
+    width: 280px;
+    float: left;
+    vertical-align: top;
+    margin-top: 0;
+  }
+  .good-of-week__text {
+    padding: 0;
+    margin: 0;
+    font-size: @up-text;
+    line-height: 30px;
+    margin-top: -6px;
+    margin-bottom: 37px;
+  }
+  .good-of-week__pic {
+    width: 334px;
+    float: right;
+    vertical-align: top;
+  }
+  .good-of-week__buy-info {
+    float: left;
+    width: 295px;
+  }
+  .good-of-week__price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1150px) {
+  .good-of-week {
+    position: relative;
+    &::before {
+      height: 20px;
+      bottom: -70px;
+    }
+  }
+  .good-of-week__offers-name {
+    left: -125px;
+    top: 15px;
+  }
+  .good-of-week__name {
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+    position: absolute;
+    top: 55px;
+  }
+  .good-of-week__info {
+    margin-left: 175px;
+    margin-top: 170px;
+    margin-bottom: 85px;
+  }
+  .good-of-week__text {
+    margin-bottom: 45px;
+  }
+  .good-of-week__pic {
+    min-width: 525px;
+  }
+  .good-of-week__buy-info {
+    margin-left: 175px;
+  }
 }

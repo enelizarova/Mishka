@@ -1,8 +1,8 @@
 .btn {
   display: block;
-  margin-top: 23px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  // margin-top: 23px;
+  padding-top: 16.5px;
+  padding-bottom: 16.5px;
   font-size: @up-text;
   line-height: 16px;
   text-transform: uppercase;
@@ -11,4 +11,20 @@
   font-weight: bold;
   border: 2px solid @base-color;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .btn--form {
+    width: 230px;
+  }
+  .btn--good-of-week {
+    width: 285px;
+  }
+  .btn--feedbacks {
+    min-width: 170px;
+  }
+}
+@media (min-width: 1150px) {
+  .btn--form {
+    margin-left: 175px;
+  }
 }

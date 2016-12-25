@@ -9,5 +9,71 @@
 }
 .contacts__map {
   width: 100%;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
+}
+.contacts__map iframe {
+  width: 100%;
+  min-height: 460px;
+}
+@media (min-width: 768px) {
+  .contacts {
+    margin-bottom: 55px;
+  }
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    position: relative;
+    margin-bottom: 52px;
+  }
+  .contacts__title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 85px;
+    right: 0;
+    top: -15px;
+    background: url('../img/icon-flag.svg') no-repeat 0 0;
+    }
+  .contacts__map {
+    margin-bottom: 47px;
+  }
+  // с этим надо что-то сделать
+  .contacts__map--interactive {
+    min-height: 460px;
+  }
+  .contacts__btn {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1150px) {
+    .contacts__container {
+    margin-left: 175px;
+    display: inline-block;
+    width: 350px;
+    margin-right: 45px;
+    vertical-align: top;
+  }
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 75px;
+    margin-bottom: 48px;
+  }
+  .contacts__title::after {
+    top: -10px;
+    left: -113px;
+  }
+  .contacts__map {
+    display: inline-block;
+    margin-right: -4px;
+    width: 525px;
+    vertical-align: top;
+  }
+  .contacts__button {
+    float: left;
+    margin-top: -105px;
+    margin-left: 175px;
+  }
 }
