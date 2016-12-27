@@ -51,6 +51,7 @@
   height: 20px;
   float: right;
   vertical-align: top;
+
   &::after {
     content: '';
     position: absolute;
@@ -61,6 +62,7 @@
     height: 20px;
   }
 }
+
 @media (min-width: 768px) {
   .product {
     flex-direction: row;
@@ -94,12 +96,14 @@
   .product__pay-info {
     padding-top: 24px;
   }
-  @media (min-width: 1150px) {
-    .product {
+}
+@media (min-width: 1150px) {
+  .product {
     display: flex;
     flex-direction: column;
     min-height: 660px;
     justify-content: flex-start;
+    margin-bottom: 53px;
   }
   .product__pic {
     width: 100%;
@@ -116,9 +120,12 @@
     display: block;
     margin-bottom: 8px;
   }
-  .product__pay-info {
-    padding-top: 25px;
+  .product__info--more-text {
     margin-bottom: 10px;
+  }
+  .product__pay-info {
+    padding-top: 22px;
+    margin-bottom: 15px;
   }
   .product__parameters {
     font-size: @base-text;
@@ -135,6 +142,5 @@
   .product__price {
     margin: 0;
     padding: 0;
-  }
   }
 }
