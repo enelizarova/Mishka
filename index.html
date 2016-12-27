@@ -162,7 +162,7 @@
               </div>
               </div>
               <div class="contacts__map">
-                <iframe class="contacts__map--interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.8926726332636!2d30.215705316098866!3d59.98368998189259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696368ee993cf49%3A0x10d4ba6dd6a90439!2z0J_RgNC40LzQvtGA0YHQutC40Lkg0L_RgC4sIDEzN9C6MSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzM3NA!5e0!3m2!1sru!2sru!4v1482443459404" style="border:0" allowfullscreen></iframe>
+                <iframe class="contacts__map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.8926726332636!2d30.215705316098866!3d59.98368998189259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696368ee993cf49%3A0x10d4ba6dd6a90439!2z0J_RgNC40LzQvtGA0YHQutC40Lkg0L_RgC4sIDEzN9C6MSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzM3NA!5e0!3m2!1sru!2sru!4v1482443459404" style="border:0" allowfullscreen></iframe>
               </div>
               <div class="content-container">
                 <div class="contacts__button">
@@ -188,21 +188,30 @@
         </div>
         </div>
       </footer>
-      <div class="modal-form">
+      <div class="modal-form__wrapper modal-form__wrapper--open">
+        <form class="modal-form">
         <h1 class="modal-form__name">Добавить в корзину</h1>
-        <p class="modal-form__text">Выберите размер:</p>
+        <p class="modal-form__legend">Выберите размер:</p>
         <div class="modal-form__variants">
-          <div class="modal-form__size modal-form__size-S">
-          S
+          <div class="modal-form__item-wrapper modal-form__item-wrapper--radio">
+            <input type="radio" id="s" name="modal-form-radio" class="modal-form__radio" checked="checked">
+            <span class="modal-form__control modal-form__control--radio">
+              <label for="s" class="modal-form__label">s</label>
+            </span>
           </div>
-          <div class="modal-form__size modal-form__size-M">
-          M
+          <div class="modal-form__item-wrapper modal-form__item-wrapper--radio">
+            <input type="radio" id="m" name="modal-form-radio" class="modal-form__radio">
+            <span class="modal-form__control modal-form__control--radio">
+              <label for="m" class="modal-form__label">m</label>
+            </span>
           </div>
-          <div class="modal-form__size modal-form__size-L">
-          L
+          <div class="modal-form__item-wrapper modal-form__item-wrapper--radio">
+            <input type="radio" id="l" name="=modal-form-radio" class="modal-form__radio">
+            <span class="modal-form__control modal-form__control--radio"><label for="l" class="modal-form__label">l</label></span>
           </div>
         </div>
-        <a class="modal-form__btn">Добавить</a>
+        <input type="button" name="modal-form-btn" class="btn btn--modal-form" value="Добавить">
+        </form>
       </div>
   </body>
 </html>
