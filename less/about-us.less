@@ -1,7 +1,8 @@
 .about-us {
   font-size: @up-text;
+  line-height: @up-text;
   font-weight: bold;
-  margin-bottom: 57px;
+  margin-bottom: 60px;
 }
 .about-us__name {
   font-size: @h2;
@@ -10,8 +11,8 @@
   margin-bottom: 33px;
 }
 .about-us__item {
-  padding-top: 53px;
-  margin-bottom: 30px;
+  padding-top: 50px;
+  margin-bottom: 40px;
   vertical-align: bottom;
   position: relative;
 
@@ -19,6 +20,9 @@
     content: '';
     position: absolute;
   }
+}
+.abour-us__column:last-child .about-us__item:last-child {
+    margin-bottom: 0;
 }
 .about-us__item--advantage1::before {
   width: 33px;
@@ -77,9 +81,11 @@
     width: 334px;
     vertical-align: top;
     font-size: 20px;
+    line-height: 20px;
   }
   .about-us__item {
-    margin-bottom: 55px;
+    padding-top: 55px;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1150px) {
