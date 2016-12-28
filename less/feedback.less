@@ -1,6 +1,7 @@
 .feedbacks {
   margin-bottom: 86px;
   position: relative;
+
   &::before {
   content: '';
   position: absolute;
@@ -10,7 +11,7 @@
   width: 100%;
   height: 7px;
   background-size: cover;
-}
+  }
 }
 .feedback__title {
   font-size: @h2;
@@ -40,10 +41,12 @@
   border: 1px solid #ececec;
   position: relative;
   margin-bottom: 9px;
+
   &--to-right {
     margin-left: -4px;
     border-left: none;
   }
+
   &::before {
     content: '';
     position: absolute;
@@ -51,6 +54,14 @@
     width: 51px;
     height: 26px;
     top: 15px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 .feedbacks__switch--to-left::before {
@@ -65,16 +76,19 @@
   margin-right: -26px;
   top: 12px;
 }
+
 @media (min-width: 768px) {
   .feedbacks {
     background: url('../img/review@1x.jpg') no-repeat 0 0;
+
     &::before {
       height: 15px;
-      bottom: -90px;
+      bottom: -85px;
     }
+
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
-      background-size: 700px auto;
+      background-size: 350px auto;
     }
     position: relative;
     margin-bottom: 148px;
@@ -86,7 +100,7 @@
     font-size: 43px;
     line-height: 50px;
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
   .feedback__content {
     font-size: @up-text;
@@ -95,7 +109,7 @@
   }
   .feedback__user-info {
     float: left;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
   .feedbacks__arrows {
     float: right;
@@ -103,6 +117,10 @@
   .feedbacks__switch {
     border: none;
     padding-left: 19px;
+
+    &--to-left::before {
+      margin-left: -30px;
+    }
   }
   .feedbacks__write-us {
     position: absolute;
@@ -112,14 +130,15 @@
 }
 @media (min-width: 1150px) {
   .feedbacks {
-    margin-left: 50px;
-    margin-bottom: 160px;
+    margin-bottom: 155px;
+    background-position: 50px 0;
+
     &::before {
-      height: 20px;
+      height: 25px;
     }
   }
   .feedback {
-    margin-left: 120px;
+    margin-left: 175px;
     padding-top: 75px;
     padding-bottom: 52px;
   }
@@ -129,5 +148,6 @@
   }
   .feedback__content {
     margin-bottom: 40px;
+    width: 750px;
   }
 }

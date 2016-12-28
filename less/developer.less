@@ -16,7 +16,8 @@
   height: 33px;
   float: right;
   margin-right: 30px;
-    &::after {
+
+  &::after {
     content: '';
     position: absolute;
     width: 33px;
@@ -26,6 +27,7 @@
     right: 4px;
   }
 }
+
 @media (min-width: 768px) {
   .developer {
     display: inline-block;
@@ -42,8 +44,12 @@
     right: -35px;
   }
 }
+
 @media (min-width: 1150px) {
-    .developer__intro {
+  .developer {
+    padding-top: 60px;
+  }
+  .developer__intro {
     padding-right: 20px;
   }
   .developer__link::after {

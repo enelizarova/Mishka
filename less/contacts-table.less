@@ -5,17 +5,28 @@
   line-height: 30px;
 }
 .contacts-table__container {
-  padding-bottom: 11px;
+  padding-bottom: 30px;
 }
 .contacts-table__field,
 .contacts-table__value {
-  padding-bottom: 20px;
   vertical-align: top;
   display: table-cell;
 }
-.contacts-table__value {
-  padding-left: 32px;
+.contacts-table__field {
+  padding-right: 35px;
 }
+.contacts-table__value--link {
+  border-bottom: 1px solid @main-theme-color;
+
+  &:hover {
+    color: @main-theme-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: 768px) {
   .contacts-table {
     font-size: @up-text;
@@ -28,7 +39,7 @@
     margin-right: -4px;
     vertical-align: top;
   }
-  .contacts-table__value {
-    padding-left: 25px;
+  .contacts-table__field {
+    padding-right: 25px;
   }
 }

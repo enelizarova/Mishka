@@ -3,7 +3,7 @@
 }
 .order-form__field {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -89,10 +89,7 @@
 }
 .order-form__item-wrapper--username {
   flex-direction: column-reverse;
-  margin-bottom: 18px;
-}
-.order-form__field--username {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .order-form__field--tel,
 .order-form__field--email {
@@ -145,7 +142,7 @@
   width: 100%;
 }
 @media (min-width: 768px) {
-    .order-form__field {
+  .order-form__field {
     flex-direction: row;
   }
   .order-form {
@@ -211,7 +208,10 @@
     top: 12px;
     left: 10px;
   }
-    .order-form__label {
+  .order-form__text--username {
+    padding-bottom: 11px;
+  }
+  .order-form__label {
     font-size: 19px;
     line-height: 18px;
     padding-top: 0;
@@ -228,11 +228,14 @@
     top: 14px;
     left: 14px;
   }
+  .order-form__field--username {
+    margin-bottom: 10px;
+  }
   .order-form__item-wrapper--radio {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
   .order-form__field--radio {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .order-form__wrapper,
   .order-form__legend-container--fill,
@@ -241,7 +244,7 @@
     background-color: @background-color;
   }
   .order-form__wrapper {
-    padding-top: 62px;
+    padding-top: 64px;
     padding-bottom: 15px;
     margin-bottom: 65px;
   }
@@ -280,14 +283,14 @@
     margin-bottom: 26px;
   }
   .order-form__item-wrapper--username {
-    margin-bottom: 37px;
+    margin-bottom: 39px;
   }
   .order-form__wrapper--text {
     padding-bottom: 10px;
     margin-bottom: 50px;
   }
   .order-form__legend--textarea {
-    margin-top: 5px;
+    margin-top: 15px;
   }
   .order-form__important-info {
     font-size: @up-text;
@@ -295,13 +298,16 @@
     align-self: flex-end;
   }
     .order-form__field--textarea {
-    margin-bottom: 45px;
+    margin-bottom: 60px;
   }
   .order-form__field--total {
     justify-content: space-between;
   }
 }
 @media (min-width: 1150px) {
+  .order-form {
+    margin-bottom: 0;
+  }
     .order-form__legend {
     width: 175px;
     text-align: center;
@@ -315,6 +321,16 @@
   .order-form__email-pic {
     bottom: 25px;
     right: 180px;
+  }
+  .order-form__field--radio {
+    margin-bottom: 14px;
+  }
+  .order-form__wrapper {
+    padding-bottom: 10px;
+    margin-bottom: 68px;
+    &--text {
+      margin-bottom: 50px;
+    }
   }
   .order-form__container,
   .order-form__tel,

@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Opensans;
+  font-family: Opensansbold;
+  src: local("Opensans"), url("../fonts/opensans.woff");
+  src: local("Opensans"), url("../fonts/opensans.woff2");
+  src: local("Opensansbold"), url("../fonts/opensansbold.woff");
+  src: local("Opensansbold"), url("../fonts/opensansbold.woff");
+}
 body {
   min-width: 320px;
   margin: 0 auto;
@@ -36,6 +44,7 @@ h3 {
     padding-right: 30px;
   }
 }
+
 @media (min-width: 1150px) {
   .content-wrapper {
     min-width: @desktop-width;
@@ -46,7 +55,7 @@ h3 {
   }
   .catalogue {
     margin-top: -45px;
-    margin-bottom: 135px;
+    margin-bottom: 130px;
   }
   .content-container--footer {
     justify-content: space-between;

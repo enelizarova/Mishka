@@ -8,22 +8,24 @@
   line-height: 24px;
   font-weight: bold;
   position: relative;
-  padding-top: 18px;
+  padding-top: 25px;
   letter-spacing: 0.9px;
   margin-bottom: 25px;
+
   &::before {
     content: '';
     position: absolute;
     width: 32px;
     height: 32px;
     background: url('../img/icon-video.svg') no-repeat 0 0;
-    top: 15px;
+    top: 30px;
     left: 33px;
   }
 }
 .how-to-do__video {
   position: relative;
   margin-bottom: 22px;
+
   &::after {
     position: absolute;
     content: '';
@@ -46,34 +48,37 @@
   margin-left: 33px;
   margin-right: 33px;
 }
+
 @media (min-width: 768px) {
   .how-to-do {
     display: flex;
     flex-direction: column;
+    margin-bottom: 65px;
   }
   .how-to-do__name {
     order: 1;
-  }
-  .how-to-do__video {
-    order: 0;
-  }
-  .how-to-do__info {
-    order: 2;
-  }
-    .how-to-do__name {
+    margin-bottom: 34px;
     font-size: 20px;
     line-height: 24px;
     margin-top: 0;
     padding-left: 105px;
-    margin-bottom: 18px;
+
+    &::before {
+      top: 20px;
+      left: 41px;
+    }
   }
-  .how-to-do__name::before {
-    top: 5px;
-    left: 41px;
+  .how-to-do__video {
+    order: 0;
+    margin-bottom: 10px;
+
+    &::after {
+      top: 193px;
+      left: 280px;
+    }
   }
-  .how-to-do__video::after {
-    top: 193px;
-    left: 280px;
+  .how-to-do__info {
+    order: 2;
   }
   .how-to-do__text {
     font-size: @base-text;
@@ -86,6 +91,7 @@
     margin-right: 40px;
   }
 }
+
 @media (min-width: 1150px) {
     .how-to-do {
     display: block;
@@ -96,6 +102,7 @@
     width: 680px;
     padding: 0;
     margin-bottom: -4px;
+
     &::after {
       top: 190px;
       left: 300px;
@@ -111,6 +118,8 @@
   }
   .how-to-do__name {
     margin-top: 88px;
+    padding-top: 10px;
+
     &::before {
       top: -45px;
       left: 61px;
@@ -118,7 +127,7 @@
   }
   .how-to-do__text {
     padding: 0;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
   .how-to-do__btn {
     margin: 0;
