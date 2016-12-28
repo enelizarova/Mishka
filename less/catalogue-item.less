@@ -17,6 +17,17 @@
   &--toy {
     background: #56c3b2;
   }
+
+  &:hover {
+
+  }
+  &:active {
+    background: #5cd6bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 .catalogue-item--interior::after {
   background: url('../img/icon-interior.svg') no-repeat 0 0;
